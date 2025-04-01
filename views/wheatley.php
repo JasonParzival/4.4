@@ -21,14 +21,9 @@
 </div>
 
 <?php if ($is_image) {?>
-        <img src="../images/wheatley.jpg" alt="Уитли">
+        <?php require "/wheatley_image.php"; ?>
 <?php } else if ($is_info) { ?>
-        <div class="caption">
-        "Подожду... подожду один час. <br>
-        А потом вернусь и, если найду твое мертвое тело, похороню тебя. <br>
-        Правильно? Отлично! Мы команда! Увидимся через час. <br>
-        Надеюсь. Если ты не мертва..."<br>
-        </div>
+        <?php require "/wheatley_info.php"; ?>
 <?php } else { ?>
         Выберите вверху информацию, которую хотите увидеть<br>
 <?php } ?>
