@@ -8,14 +8,8 @@
 <a href="/GLaDOS/info">Описание</a>
 
 <?php if ($is_image) {?>
-        <img src="..." alt="">
+        <img src="../images/GLaDOS.gif" alt="ГЛэДОС">
 <?php } else if ($is_info) { ?>
-
-<?php } ?>
-
-<div class="image">
-        <img src="images/GLaDOS.gif" alt="ГЛэДОС">
-        
         <div class="caption">
             "А, это ты… Давно не виделись. Как дела?<br>
              Я была так занята, пока была мертва. <br>
@@ -26,4 +20,4 @@
              чтобы разбудить меня, значит ты очень, очень любишь испытания. <br>
              Я тоже их люблю. Но сначала нужно уладить одну мелочь."<br>
         </div>
-</div>
+<?php } ?>
