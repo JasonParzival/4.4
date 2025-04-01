@@ -1,3 +1,18 @@
+<?php
+        $is_image = $url == '/GLaDOS/image';
+        $is_info = $url == '/GLaDOS/info';
+?>
+
+<h1>ГЛэДОС</h1>
+<a href="/GLaDOS/image">Картинка</a>
+<a href="/GLaDOS/info">Описание</a>
+
+<?php if ($is_image) {?>
+        <img src="..." alt="">
+<?php } else if ($is_info) { ?>
+
+<?php } ?>
+
 <div class="image">
         <img src="images/GLaDOS.gif" alt="ГЛэДОС">
         
