@@ -4,8 +4,21 @@
 ?>
 
 <h1>ГЛэДОС</h1>
-<a href="/GLaDOS/image">Картинка</a>
-<a href="/GLaDOS/info">Описание</a>
+
+<div class="container">
+        <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link <?= $is_image ? "active" : '' ?>" href="/GLaDOS/image">
+                Картинка
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link <?= $is_info ? "active" : '' ?>" href="/GLaDOS/info">
+                Описание
+            </a>
+        </li>
+        </ul>
+</div>
 
 <?php if ($is_image) {?>
         <img src="../images/GLaDOS.gif" alt="ГЛэДОС">
@@ -20,4 +33,6 @@
              чтобы разбудить меня, значит ты очень, очень любишь испытания. <br>
              Я тоже их люблю. Но сначала нужно уладить одну мелочь."<br>
         </div>
+<?php } else { ?>
+        Выберите вверху информацию, которую хотите увидеть<br>
 <?php } ?>

@@ -4,8 +4,21 @@
 ?>
 
 <h1>Уитли</h1>
-<a href="/wheatley/image">Картинка</a>
-<a href="/wheatley/info">Описание</a>
+
+<div class="container">
+        <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link <?= $is_image ? "active" : '' ?>" href="/wheatley/image">
+                Картинка
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link <?= $is_info ? "active" : '' ?>" href="/wheatley/info">
+                Описание
+            </a>
+        </li>
+        </ul>
+</div>
 
 <?php if ($is_image) {?>
         <img src="../images/wheatley.jpg" alt="Уитли">
@@ -16,4 +29,6 @@
         Правильно? Отлично! Мы команда! Увидимся через час. <br>
         Надеюсь. Если ты не мертва..."<br>
         </div>
+<?php } else { ?>
+        Выберите вверху информацию, которую хотите увидеть<br>
 <?php } ?>

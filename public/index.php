@@ -32,31 +32,10 @@
     </nav>
 
     <div class="container">
-        <ul class="nav nav-pills">
-        <li class="nav-item">
-            <a class="nav-link <?= $is_image ? "active" : '' ?>" href="/wheatley">
-                Уитли
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link <?= $is_image ? "active" : '' ?>" href="/wheatley/image">
-                Картинка
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link <?= $is_image ? "active" : '' ?>" href="/wheatley/info">
-                Описание
-            </a>
-        </li>
-        </ul>
-    </div>
-    
-
-    <div class="container">
         <?php 
         $url = $_SERVER["REQUEST_URI"];
 
-        echo "Вы на странице: $url, будьте внимательны!<br>";
+        //echo "Вы на странице: $url, будьте внимательны!<br>";
 
         if ($url == "/") {
             require "../views/main.php";
