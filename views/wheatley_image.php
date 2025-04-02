@@ -1,1 +1,1 @@
-<img src="../images/wheatley.jpg" alt="Уитли">
+<img src="../images/wheatley.jpg" style="width: 50%; max-width: 300px;" alt="Уитли">

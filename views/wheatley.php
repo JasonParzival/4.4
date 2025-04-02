@@ -20,10 +20,16 @@
         </ul>
 </div>
 
-<?php if ($is_image) {?>
-        <?php require "/wheatley_image.php"; ?>
-<?php } else if ($is_info) { ?>
-        <?php require "/wheatley_info.php"; ?>
-<?php } else { ?>
-        Выберите вверху информацию, которую хотите увидеть<br>
-<?php } ?>
+<div style="margin-top: 15px;">
+        <ul class="list-group">
+                <li class="list-group-item">
+                        <?php if ($is_image) {?>
+                                <?php require "/wheatley_image.php"; ?>
+                        <?php } else if ($is_info) { ?>
+                                <?php require "/wheatley_info.php"; ?>
+                        <?php } else { ?>
+                                Выберите вверху информацию, которую хотите увидеть<br>
+                        <?php } ?>
+                </li>
+        </ul>
+</div>
